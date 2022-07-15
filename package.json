@@ -33,13 +33,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/keystonejs/keystone.git#main"
+    "url": "git+https://github.com/muhad-bk/k6-auth.git#main"
   },
   "description": "Keystone-6 is the latest version of Keystone.\r To get help with this package join the conversation in [Slack](https://community.keystonejs.com/), or [Github](https://github.com/keystonejs/keystone/).",
   "bugs": {
-    "url": "https://github.com/keystonejs/keystone/issues"
+    "url": "https://github.com/muhad-bk/k6-auth/issues"
   },
-  "homepage": "https://github.com/keystonejs/keystone/tree/main#readme",
+  "homepage": "https://github.com/muhad-bk/k6-auth/tree/main#readme",
   "directories": {
     "lib": "lib"
   },
@@ -47,7 +47,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "keystoone",
+    "keystone",
     "auth"
   ],
   "author": "Muhad BK <muhadbk0@gmail.com>"
