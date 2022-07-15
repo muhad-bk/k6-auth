@@ -1,6 +1,6 @@
 {
   "name": "k6-auth-otp",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "license": "MIT",
   "main": "dist/index",
   "typings": "dist/index",

@@ -13,5 +13,5 @@
     "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */,
     "noUnusedLocals": true
   },
-  "include": ["src", "pages"]
+  "include": ["src"]
 }
