@@ -1,8 +1,9 @@
 {
-  "name": "@k6-muhad/auth",
-  "version": "4.0.0",
+  "name": "k6-auth-otp",
+  "version": "4.0.1",
   "license": "MIT",
-  "main": "index.ts",
+  "main": "dist/index",
+  "typings": "dist/index",
   "engines": {
     "node": "^14.15 || ^16.13"
   },
@@ -19,7 +20,9 @@
   },
   "devDependencies": {
     "@keystone-6/core": "2.1.0",
-    "react": "18.2.0"
+    "@types/react-dom": "^18.0.6",
+    "react": "18.2.0",
+    "typescript": "^4.7.4"
   },
   "peerDependencies": {
     "@keystone-6/core": "^2.1.0",
@@ -35,7 +38,7 @@
     "type": "git",
     "url": "git+https://github.com/muhad-bk/k6-auth.git#main"
   },
-  "description": "Keystone-6 is the latest version of Keystone.\r To get help with this package join the conversation in [Slack](https://community.keystonejs.com/), or [Github](https://github.com/keystonejs/keystone/).",
+  "description": "OTP Auth package for Keystone 6",
   "bugs": {
     "url": "https://github.com/muhad-bk/k6-auth/issues"
   },
@@ -44,7 +47,8 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -p ."
   },
   "keywords": [
     "keystone",
