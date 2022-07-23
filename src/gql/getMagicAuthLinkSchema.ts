@@ -95,7 +95,7 @@ export function getMagicAuthLinkSchema<I extends string>({
 
             await magicAuthLink.sendToken({ itemId, identity, token, context });
           }
-          return true;
+          return result.success;
         },
       }),
       [gqlNames.redeemItemMagicAuthToken]: graphql.field({
