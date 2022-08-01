@@ -1,6 +1,6 @@
 {
   "name": "k6-auth-otp",
-  "version": "4.0.6",
+  "version": "4.0.7",
   "license": "MIT",
   "main": "dist/k6-auth-otp.cjs.js",
   "module": "dist/k6-auth-otp.esm.js",
@@ -42,13 +42,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/muhad-bk/k6-auth.git#main"
+    "url": "git+https://github.com/muhad-bk/k6-auth.git#master"
   },
   "description": "OTP Auth package for Keystone 6",
   "bugs": {
     "url": "https://github.com/muhad-bk/k6-auth/issues"
   },
-  "homepage": "https://github.com/muhad-bk/k6-auth/tree/main#readme",
+  "homepage": "https://github.com/muhad-bk/k6-auth/tree/master#readme",
   "directories": {
     "lib": "lib"
   },
