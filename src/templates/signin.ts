@@ -10,7 +10,7 @@ export const signinTemplate = ({
   secretField: string;
 }) => {
   // -- TEMPLATE START
-  return `import { getSigninPage } from '@keystone-6/auth/pages/SigninPage'
+  return `import { getSigninPage } from 'k6-auth-otp/pages/SigninPage'
 
 export default getSigninPage(${JSON.stringify({
     identityField: identityField,
