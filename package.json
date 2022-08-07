@@ -1,6 +1,6 @@
 {
   "name": "k6-auth-otp",
-  "version": "4.0.7",
+  "version": "4.0.8",
   "license": "MIT",
   "main": "dist/k6-auth-otp.cjs.js",
   "module": "dist/k6-auth-otp.esm.js",
@@ -9,6 +9,7 @@
     "node": "^14.15 || ^16.13"
   },
   "dependencies": {
+    "@babel/runtime": "^7.16.3",
     "@keystone-ui/button": "^7.0.0",
     "@keystone-ui/core": "^5.0.0",
     "@keystone-ui/fields": "^7.1.0",
@@ -19,7 +20,6 @@
     "graphql": "^15.8.0"
   },
   "devDependencies": {
-    "@babel/runtime": "^7.16.3",
     "@babel/preset-env": "^7.18.6",
     "@babel/preset-typescript": "^7.18.6",
     "@keystone-6/core": "2.1.0",
