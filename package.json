@@ -1,6 +1,6 @@
 {
   "name": "k6-auth-otp",
-  "version": "4.0.8",
+  "version": "4.0.9",
   "license": "MIT",
   "main": "dist/k6-auth-otp.cjs.js",
   "module": "dist/k6-auth-otp.esm.js",
