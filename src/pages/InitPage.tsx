@@ -21,10 +21,10 @@ import {
   useInvalidFields,
 } from '@keystone-6/core/admin-ui/utils';
 import { LoadingDots } from '@keystone-ui/loading';
-import { guessEmailFromValue, validEmail } from "../src/lib/emailHeuristics";
-import { IconTwitter, IconGithub } from "../src/components/Icons";
-import { SigninContainer } from "../src/components/SigninContainer";
-import { useRedirect } from "../src/lib/useFromRedirect";
+import { guessEmailFromValue, validEmail } from "../lib/emailHeuristics";
+import { IconTwitter, IconGithub } from "../components/Icons";
+import { SigninContainer } from "../components/SigninContainer";
+import { useRedirect } from "../lib/useFromRedirect";
 
 const signupURL = 'https://signup.keystonejs.cloud/api/newsletter-signup';
 

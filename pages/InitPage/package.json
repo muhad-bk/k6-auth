@@ -1,0 +1,4 @@
+{
+  "main": "dist/k6-auth-otp-pages-InitPage.cjs.js",
+  "module": "dist/k6-auth-otp-pages-InitPage.esm.js"
+}
