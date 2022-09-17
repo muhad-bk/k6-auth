@@ -1,6 +1,6 @@
 {
   "name": "k6-auth-otp",
-  "version": "4.0.14",
+  "version": "4.0.15",
   "license": "MIT",
   "main": "dist/k6-auth-otp.cjs.js",
   "module": "dist/k6-auth-otp.esm.js",
@@ -32,7 +32,8 @@
   },
   "peerDependencies": {
     "@keystone-6/core": "^2.3.0",
-    "react": "^18.2.0"
+    "react": "^18.2.0",
+      "graphql": "14.x || 15.x || 16.x"
   },
   "preconstruct": {
     "entrypoints": [
