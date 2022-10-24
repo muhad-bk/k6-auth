@@ -26,7 +26,7 @@
     "@preconstruct/cli": "2.1.4",
     "@preconstruct/eslint-plugin-format-js-tag": "^0.1.0",
     "@types/node": "^18.0.4",
-    "@types/react-dom": "^18.0.6",
+    "@types/react-dom": "18.0.7",
     "react": "^18.2.0",
     "typescript": "^4.7.4"
   },
