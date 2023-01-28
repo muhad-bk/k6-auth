@@ -54,7 +54,10 @@ export function getBaseAuthSchema<I extends string, S extends string>({
           resolveType: (root, context) => context.session?.listKey,
         }),
         resolve(root, args, { session, db }) {
-          if (typeof session?.itemId === 'string' && typeof session.listKey === 'string') {
+          if (
+            (typeof session?.itemId === 'string' || typeof session.itemId === 'number') &&
+            typeof session.listKey === 'string'
+          ) {
             return db[session.listKey].findOne({ where: { id: session.itemId } });
           }
           return null;
@@ -69,7 +72,7 @@ export function getBaseAuthSchema<I extends string, S extends string>({
           [secretField]: graphql.arg({ type: graphql.nonNull(graphql.String) }),
         },
         async resolve(root, { [identityField]: identity, [secretField]: secret }, context) {
-          if (!context.startSession) {
+          if (!context.sessionStrategy) {
             throw new Error('No session implementation available on context');
           }
 
@@ -88,10 +91,17 @@ export function getBaseAuthSchema<I extends string, S extends string>({
           }
 
           // Update system state
-          const sessionToken = await context.startSession({
-            listKey,
-            itemId: result.item.id.toString(),
+          const sessionToken = await context.sessionStrategy.start({
+            data: {
+              listKey,
+              itemId: result.item.id,
+            },
+            context,
           });
+          // return Failure if sessionStrategy.start() returns null
+          if (typeof sessionToken !== 'string' || sessionToken.length === 0) {
+            return { code: 'FAILURE', message: 'Failed to start session.' };
+          }
           return { sessionToken, item: result.item };
         },
       }),
