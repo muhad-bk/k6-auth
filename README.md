@@ -7,3 +7,5 @@ Its a replace of keystone auth and have options to generate otp for user and  ve
 To get otp use magic auth link mutation and verify auth link mutation for verify otp process.
 
 To get help with this package join the conversation in [Slack](https://community.keystonejs.com/), or [Github](https://github.com/keystonejs/keystone/).
+
+If you have any custom package/plugins requirements, feel free to connect on https://twitter.com/Muhad_BK
